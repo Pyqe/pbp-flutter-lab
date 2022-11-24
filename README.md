@@ -100,7 +100,7 @@ Jika `Navigator.pushReplacement` dijalankan saat pergantian halaman, elemen tera
 8. Lakukan `add`, `commit`, dan `push` ke GitHub.
 3. *Push* semua ke GitHub.
 
-### Tugas 9
+# Tugas 9
 
 ## Pengambilan JSON Tanpa Membuat Model
 
