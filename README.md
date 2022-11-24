@@ -99,3 +99,40 @@ Jika `Navigator.pushReplacement` dijalankan saat pergantian halaman, elemen tera
 7. Pada `data.dart`, di dalam `Column` pada `body`, buat supaya `children`-nya menampilkan satu `Card` untuk masing-masing dari *budget* yang telah dibuat.
 8. Lakukan `add`, `commit`, dan `push` ke GitHub.
 3. *Push* semua ke GitHub.
+
+### Tugas 9
+
+## Pengambilan JSON Tanpa Membuat Model
+
+Pengambilan JSON bisa dilakukan tanpa membuat model. Namun, supaya mempermudah pemrosesan data yang diambil, direkomendasi untuk membuat model terlebih dahulu.
+
+## Widget yang Digunakan
+
+- `FutureBuilder`: Untuk menampilkan tampilan tertentu apabila data yang ingin di-build belum ter-build.
+- `CircularProgressIndicator`: Animasi loading.
+- `SizedBox`: Boks berukuran.
+- `InkWell`: Widget yang merespons terhadap sentuhan.
+- `BoxDecoration`: Dekorasi boks.
+- `BorderRadius`: Radius sudut boks.
+- `BoxShadow`: Bayangan boks.
+- `FontWeight`: Weight untuk suatu font untuk mengatur ketebalan.
+
+## Proses Pengambilan JSON pada Flutter
+
+1. Tentukan sumber JSON yang ingin diambil.
+2. Buat model class sesuai sumber tersebut.
+3. Buat fungsi untuk fetch sumber JSON tersebut.
+4. Masukkan data yang di-fetch pada instansi class yang sudah dibuat.
+5. Gunakan data-data tersebut pada widget-widget yang ditampilkan pada halamannya.
+
+## Implementasi
+
+1. Buat `watchlist.dart` untuk halaman yang menampilkan daftar watch list.
+2. Buat supaya `drawer` setiap halaman bisa mengakses halaman daftar watch list.
+3. Buat `watchlistmodel.dart` untuk mendeklarasi class `WatchList` yang dibuat menggunakan Quicktype.
+4. Tambahkan fungsi pada `watchlist.dart` untuk fetch data dari tugas 3 dan disimpan kepada suatu `List<WatchList>`.
+5. Buat suatu tampilan "loading" pada `watchlist.dart` yang jika sudah selesai akan menampilkan daftar item watch list yang mengambil dari nilai-nilai `List<WatchList>`.
+6. Buat setiap item pada daftar menjadi bisa diklik dan akan berpindah halaman ke detail item tersebut.
+7. Buat `watchlist_details.dart` untuk menampilkan halaman detail suatu item watch list yang menerima parameter isi dari suatu item yang ingin ditampilkan.
+8. Untuk menampilkan tanggal, gunakan package `intl` yang sebelumnya perlu ditambahkan pada `dependencies`.
+9. Lakukan `add`, `commit`, dan `push` ke GitHub.
